@@ -1,0 +1,3 @@
+shideon_blox_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ShideonBloxBundle:Default:index }

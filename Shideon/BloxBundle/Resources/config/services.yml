@@ -1,0 +1,4 @@
+services:
+#    shideon_blox.example:
+#        class: Shideon\BloxBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
