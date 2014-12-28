@@ -2,7 +2,7 @@
 /**
  * Entity - user
  *
- * @copyright (c) 2014-215 John Pancoast
+ * @copyright (c) 2014-2015 John Pancoast
  * @author John Pancoast <shideon@gmail.com>
  */
 
