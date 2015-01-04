@@ -1,4 +1,4 @@
 blox-bundle
 ===========
 
-A simple CMS symfony bundle
+A simple content manager as a symfony bundle.
