@@ -6,3 +6,69 @@ Shideon\BloxBundle\Model\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+    # we have to do this due to funky mapping issue
+    # which is not allowing us to create a crud form for
+    # the fos user bundle user entity.
+    #
+    # for now, we're leaving these fields exactly as they
+    # are in fos user bundle.
+    fields:
+        username:
+            column: username
+            type: string
+            length: 255
+        usernameCanonical:
+            column: username_canonical
+            type: string
+            length: 255
+            unique: true
+        email:
+            column: email
+            type: string
+            length: 255
+        emailCanonical:
+            column: email_canonical
+            type: string
+            length: 255
+            unique: true
+        enabled:
+            column: enabled
+            type: boolean
+        salt:
+            column: salt
+            type: string
+        password:
+            column: password
+            type: string
+        lastLogin:
+            column: last_login
+            type: datetime
+            nullable: true
+        locked:
+            column: locked
+            type: boolean
+        expired:
+            column: expired
+            type: boolean
+        expiresAt:
+            column: expires_at
+            type: datetime
+            nullable: true
+        confirmationToken:
+            column: confirmation_token
+            type: string
+            nullable: true
+        passwordRequestedAt:
+            column: password_requested_at
+            type: datetime
+            nullable: true
+        roles:
+            column: roles
+            type: array
+        credentialsExpired:
+            column: credentials_expired
+            type: boolean
+        credentialsExpireAt:
+            column: credentials_expire_at
+            type: datetime
+            nullable: true
