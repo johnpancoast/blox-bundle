@@ -3,5 +3,5 @@ shideon_blox_user:
     prefix:   /user
 
 shideon_blox_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: ShideonBloxBundle:Default:index }
