@@ -17,5 +17,8 @@ namespace Shideon\BloxBundle\Model;
  */
 class UserModel
 {
-    public function test();
+    public function test()
+    {
+        return 'blah';
+    }
 }
