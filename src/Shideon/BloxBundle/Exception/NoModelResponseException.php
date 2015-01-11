@@ -6,21 +6,16 @@
  * @license MIT
  */
 
-namespace Shideon\BloxBundle\Model;
-use Shideon\BloxBundle\ModelResponse;
-use Shideon\BloxBundle\ModelState;
+namespace Shideon\BloxBundle\Exception;
 
 /**
- * UserModel
+ * NoModelResponseException
  *
  * @package blox
  * @copyright (c) 2014-2015 John Pancoast
  * @author John Pancoast <shideon@gmail.com>
  */
-class UserModel
+class NoModelResponseException extends \Exception
 {
-    public function test()
-    {
-        return new ModelResponse(ModelState::SUCCESS, 'Success');
-    }
+    public $message = 'Expected model response from model callable.';
 }

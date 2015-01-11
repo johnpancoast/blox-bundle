@@ -6,21 +6,18 @@
  * @license MIT
  */
 
-namespace Shideon\BloxBundle\Model;
-use Shideon\BloxBundle\ModelResponse;
-use Shideon\BloxBundle\ModelState;
+namespace Shideon\BloxBundle;
 
 /**
- * UserModel
+ * Model state
  *
  * @package blox
  * @copyright (c) 2014-2015 John Pancoast
  * @author John Pancoast <shideon@gmail.com>
  */
-class UserModel
+class ModelState
 {
-    public function test()
-    {
-        return new ModelResponse(ModelState::SUCCESS, 'Success');
-    }
+    const FAILURE = 1;
+    const INIT = 2;
+    const SUCCESS = 4;
 }
