@@ -1,7 +1,3 @@
-shideon_blox_user:
-    resource: "@ShideonBloxBundle/Resources/config/routing/user.php"
-    prefix:   /user
-
 shideon_blox_homepage:
     path:     /
     defaults: { _controller: ShideonBloxBundle:Default:index }
