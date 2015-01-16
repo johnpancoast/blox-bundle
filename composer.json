@@ -9,6 +9,10 @@
       "email": "shideon@gmail.com"
     }
   ],
+  "requires": {
+    "php": "5.4",
+    "shideon/precept": "dev-master"
+  }
   "autoload": {
     "psr-0": {"Shideon\\BloxBundle\\": "src/"}
   }
