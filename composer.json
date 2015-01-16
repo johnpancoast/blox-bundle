@@ -1,7 +1,6 @@
 {
   "name": "shideon/blox-bundle",
   "description": "A simple content manager as a symfony bundle",
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
