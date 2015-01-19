@@ -588,4 +588,18 @@ class User implements UserInterface, GroupableInterface
     {
         return (string) $this->getUsername();
     }
+
+    /**
+     * Tells if the the given user is this user.
+     *
+     * Useful when not hydrating all fields.
+     *
+     * @param null|UserInterface $user
+     *
+     * @return boolean
+     */
+    public function isUser(UserInterface $user = null)
+    {
+        return null !== $user && $this->getId() === $user->getId();
+    }
 }
